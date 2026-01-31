@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrono Elite | Premium Watches</title>
+    <title>Haseeb Footwear | Modren Footweares</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,68 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Chrono<span>Elite</span></a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html" class="logo">Haseeb<span>Footwear</span></a>
+            
+            <!-- Desktop Navigation with Social Icons -->
+            <div class="nav-desktop">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop All</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                
+                <!-- Social Media Icons - Desktop Only -->
+                <div class="social-icons desktop-only">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hamburger Menu Icon -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            
+            <!-- Mobile Menu (with social icons) -->
+            <div class="mobile-menu-wrapper">
+                <ul class="nav-menu mobile-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop All</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                    <!-- Social Media Icons - Mobile Menu -->
+                    <li class="social-icons-mobile">
+                        <span class="follow-us">Follow Us:</span>
+                        <div class="mobile-social-icons">
+                            <a href="https://facebook.com" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -27,97 +84,149 @@
         <div class="hero-overlay">
             <div class="container hero-content">
                 <h1>Timeless Elegance, Modern Precision</h1>
-                <p>Discover our curated collection of premium watches that blend craftsmanship with contemporary design.</p>
-                <a href="https://wa.me/923001234567?text=Hi!%20I'm%20interested%20in%20your%20watches%20collection." class="btn-hero" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Shop on WhatsApp
+                <p>Discover our curated collection of Modren Footweares that blend craftsmanship with contemporary design.</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn-hero">
+                        <i class="fas fa-shopping-bag"></i> Explore Collection
+                    </a>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I'm%20interested%20in%20your%20Footweares%20collection." class="btn-hero btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Shop on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <p class="section-subtitle">Our handpicked selection of premium timepieces</p>
+            
+            <div class="products-grid">
+                <!-- Featured Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (1).jfif" alt="Classic Silver Footwear">
+                        <span class="featured-badge">Featured</span>
+                    </div>
+                    <h3>Classic Silver</h3>
+                    <p class="product-desc">Minimalist design with stainless steel band</p>
+                    <p class="price">1699</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Classic%20Silver'%20Footwear%20for%20$249.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+                <!-- Featured Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (2).jfif" alt="Black Leather Footwear">
+                        <span class="featured-badge">Bestseller</span>
+                    </div>
+                    <h3>Black Leather</h3>
+                    <p class="product-desc">Genuine leather strap with rose gold case</p>
+                    <p class="price">1899</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Black%20Leather'%20Footwear%20for%20$189.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+                <!-- Featured Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (3).jfif" alt="Rose Gold Luxury Footwear">
+                        <span class="featured-badge">Luxury</span>
+                    </div>
+                    <h3>Rose Gold Luxury</h3>
+                    <p class="product-desc">Elegant rose gold with diamond markers</p>
+                    <p class="price">4499</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Rose%20Gold%20Luxury'%20Footwear%20for%20$449.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+                <!-- Featured Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (4).jfif" alt="Sports Haseebgraph Footwear">
+                        <span class="featured-badge">New</span>
+                    </div>
+                    <h3>Sports Haseebgraph</h3>
+                    <p class="product-desc">Water-resistant with multiple dials</p>
+                    <p class="price">2999</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Sports%20Haseebgraph'%20Footwear%20for%20$299.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+                <!-- Featured Product 5 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (5).jfif" alt="Sports Haseebgraph Footwear">
+                        <span class="featured-badge">New</span>
+                    </div>
+                    <h3>Sports Haseebgraph</h3>
+                    <p class="product-desc">Water-resistant with multiple dials</p>
+                    <p class="price">2999</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Sports%20Haseebgraph'%20Footwear%20for%20$299.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+                <!-- Featured Product 6 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/footwear (6).jfif" alt="Sports Haseebgraph Footwear">
+                        <span class="featured-badge">New</span>
+                    </div>
+                    <h3>Sports Haseebgraph</h3>
+                    <p class="product-desc">Water-resistant with multiple dials</p>
+                    <p class="price">2999</p>
+                    <a href="https://wa.me/923275569530?text=Hi!%20I%20want%20to%20buy%20'Sports%20Haseebgraph'%20Footwear%20for%20$299.99" class="btn-buy" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+
+            </div>
+            
+            <!-- View All Button -->
+            <div class="view-all-container">
+                <a href="shop.html" class="view-all-btn">
+                    <i class="fas fa-arrow-right"></i> View All Footweares
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products-section">
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
         <div class="container">
-            <h2 class="section-title">Our Collection</h2>
-            <p class="section-subtitle">Handpicked luxury watches for every occasion</p>
+            <h2 class="section-title">Why Choose Haseeb Footwear</h2>
             
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch1.jpg" alt="Classic Silver Watch">
-                    </div>
-                    <h3>Classic Silver</h3>
-                    <p class="product-desc">Minimalist design with stainless steel band</p>
-                    <p class="price">$249.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Classic%20Silver'%20watch%20for%20$249.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Each Footwear is crafted with precision using the finest materials</p>
                 </div>
-
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch2.jpg" alt="Black Leather Watch">
-                    </div>
-                    <h3>Black Leather</h3>
-                    <p class="product-desc">Genuine leather strap with rose gold case</p>
-                    <p class="price">$189.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Black%20Leather'%20watch%20for%20$189.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
+                
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Free delivery on all orders above 5000</p>
                 </div>
-
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch3.jpg" alt="Rose Gold Luxury Watch">
-                    </div>
-                    <h3>Rose Gold Luxury</h3>
-                    <p class="product-desc">Elegant rose gold with diamond markers</p>
-                    <p class="price">$449.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Rose%20Gold%20Luxury'%20watch%20for%20$449.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
+                
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support via WhatsApp</p>
                 </div>
-
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch4.jpg" alt="Sports Chronograph Watch">
-                    </div>
-                    <h3>Sports Chronograph</h3>
-                    <p class="product-desc">Water-resistant with multiple dials</p>
-                    <p class="price">$299.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Sports%20Chronograph'%20watch%20for%20$299.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch5.jpg" alt="Midnight Blue Watch">
-                    </div>
-                    <h3>Midnight Blue</h3>
-                    <p class="product-desc">Deep blue dial with silver accents</p>
-                    <p class="price">$279.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Midnight%20Blue'%20watch%20for%20$279.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="watch6.jpg" alt="Titanium Professional Watch">
-                    </div>
-                    <h3>Titanium Professional</h3>
-                    <p class="product-desc">Lightweight titanium, professional look</p>
-                    <p class="price">$399.99</p>
-                    <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20buy%20'Titanium%20Professional'%20watch%20for%20$399.99" class="btn-buy" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
+                
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>1 Year Warranty</h3>
+                    <p>All Footweares come with 1-year manufacturer warranty</p>
                 </div>
             </div>
         </div>
@@ -126,11 +235,46 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>ChronoElite &copy; 2023 | Premium Watch Store</p>
-            <p>All orders via WhatsApp | 24/7 Customer Support</p>
-            <a href="contact.html" class="footer-contact">Contact Us</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Haseeb<span>Footwear</span></a>
+                    <p>Modren Footweares for the modern individual</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop All</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <p>Follow our social media for latest collections</p>
+                    <div class="social-icons footer-social-icons">
+                        <a href="https://facebook.com" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Haseeb Footwear &copy; 2026 | Modren Footwear Store | All orders via WhatsApp | 24/7 Customer Support</p>
+                <p>D.Stop Haripur KPK Pakistan | Open: 9 AM - 8 PM (Monday to Sunday - Friday OFF)</p>
+            </div>
         </div>
     </footer>
 </body>
-
 </html>
