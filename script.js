@@ -107,28 +107,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Mobile menu functionality
+    // Mobile menu functionality - FIXED VERSION
     const navToggle = document.getElementById('nav-toggle');
-    const hamburger = document.querySelector('.hamburger');
     
-    if (navToggle && hamburger) {
-        // Close mobile menu when clicking outside
+    if (navToggle) {
+        // Try multiple selectors for hamburger button
+        const hamburger = document.querySelector('.hamburger, .menu-toggle, [for="nav-toggle"], label[for="nav-toggle"]');
+        
+        // Close mobile menu when clicking outside - IMPROVED VERSION
         document.addEventListener('click', function(event) {
-            const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
-            const isClickInsideMenu = mobileMenuWrapper?.contains(event.target);
-            const isClickOnHamburger = hamburger.contains(event.target);
+            const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper, .mobile-menu, .nav-menu-mobile');
+            const navToggleLabel = document.querySelector('label[for="nav-toggle"]');
             
-            if (!isClickInsideMenu && !isClickOnHamburger && navToggle.checked) {
+            // Check if click is inside mobile menu or on hamburger/label
+            const isClickInsideMenu = mobileMenuWrapper?.contains(event.target);
+            const isClickOnToggle = navToggleLabel?.contains(event.target) || 
+                                   (hamburger && hamburger.contains(event.target)) ||
+                                   event.target === navToggle;
+            
+            if (!isClickInsideMenu && !isClickOnToggle && navToggle.checked) {
                 navToggle.checked = false;
             }
         });
         
         // Close menu when clicking on a link
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a, .nav-mobile a, [class*="mobile"] a');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', function() {
                 navToggle.checked = false;
             });
+        });
+        
+        // Additional safety: Close menu on window resize (if needed)
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && navToggle.checked) {
+                navToggle.checked = false;
+            }
         });
     }
 });
