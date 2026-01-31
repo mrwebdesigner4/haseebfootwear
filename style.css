@@ -1033,6 +1033,18 @@ body {
         transition: var(--transition);
         z-index: 1000;
     }
+
+    /* Mobile menu social icons - Enhanced */
+    .mobile-menu-wrapper .social-icon {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 5px !important;
+    }
     
     /* Mobile menu */
     .mobile-menu {
@@ -1200,4 +1212,5 @@ body {
         white-space: nowrap;
     }
 }
+
 
